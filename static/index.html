@@ -17,11 +17,11 @@
     <script type="text/javascript">
     const mapboxTiles = L.tileLayer('tiles/tile-{z}-{x}-{y}.png', {
         zoomOffset: -8,
-        maxZoom: 15
     });
 
     const map = L.map('map', {
        crs: L.CRS.Simple,
+        maxZoom: 13
     });
 
     map.addLayer(mapboxTiles)
