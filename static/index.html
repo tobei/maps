@@ -16,7 +16,8 @@
 
     <script type="text/javascript">
     const mapboxTiles = L.tileLayer('tiles/tile-{z}-{x}-{y}.png', {
-        zoomOffset: -8
+        zoomOffset: -8,
+        maxZoom: 16
     });
 
     const map = L.map('map', {
@@ -24,7 +25,7 @@
     });
 
     map.addLayer(mapboxTiles)
-    map.setView([0, 0], 8);
+    map.setView([-0.5, 0.5], 10);
     </script>
 </body>
 </html>
